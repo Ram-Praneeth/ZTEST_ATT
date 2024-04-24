@@ -1,0 +1,28 @@
+managed implementation in class zbp_i_test_att unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZI_TEST_ATT //alias <alias_name>
+persistent table ztest_att1
+draft table ztest_att_draft1
+lock master
+total etag LocalLastChangedAt
+authorization master ( instance )
+etag master LastChangedAt
+{
+
+  // administrative fields: read only
+  field ( readonly ) LastChangedAt, LocalLastChangedAt;
+  field ( readonly : update ) Invoice;
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+
+  draft determine action Prepare;
+
+}

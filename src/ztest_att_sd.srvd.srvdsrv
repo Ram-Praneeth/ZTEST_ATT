@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition'
+define service ZTEST_ATT_SD {
+  expose ZC_TEST_ATT as Attachment;
+}
