@@ -6,6 +6,7 @@ define root view entity ZC_TEST_ATT
   as projection on ZI_TEST_ATT
 {
   key Invoice,
+  key Uuid,
       Comments,
       Attachment,
       MimeType,

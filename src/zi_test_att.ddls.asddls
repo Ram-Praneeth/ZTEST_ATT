@@ -4,6 +4,7 @@ define root view entity ZI_TEST_ATT
   as select from ztest_att1
 {
   key invoice               as Invoice,
+  key uuid                  as Uuid,
       comments              as Comments,
       @Semantics.largeObject:
       { mimeType: 'MimeType',

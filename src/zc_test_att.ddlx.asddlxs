@@ -34,6 +34,9 @@ annotate view ZC_TEST_ATT with
   @UI: { lineItem:       [ { position: 10, importance: #HIGH , label: 'Invoice Number'} ] ,
           identification: [ { position: 10 , label: 'Invoice Number' } ] }
   Invoice;
+    @UI: { lineItem:       [ { position: 15, importance: #HIGH , label: 'Unique Id'} ] ,
+          identification: [ { position: 15 , label: 'Unique Identification Number' } ] }
+  Uuid;
   @UI: { lineItem:       [ { position: 20, importance: #HIGH , label: 'Comments'} ] ,
            identification: [ { position: 20 , label: 'Comments' } ] }
   Comments;

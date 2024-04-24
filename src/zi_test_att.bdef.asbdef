@@ -14,6 +14,7 @@ etag master LastChangedAt
   // administrative fields: read only
   field ( readonly ) LastChangedAt, LocalLastChangedAt;
   field ( readonly : update ) Invoice;
+  field ( numbering : managed )Uuid;
   create;
   update;
   delete;
